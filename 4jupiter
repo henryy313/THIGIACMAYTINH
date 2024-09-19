@@ -1,0 +1,17 @@
+from PIL import Image
+directory = 'D:/ThiGiacMayTinh'
+from PIL import Image
+
+my_path = 'D:/ThiGiacMayTinh/1.jpg'
+img = Image.open(my_path)
+img.show()
+display(img)
+print(img.size)
+
+region = (0, 0, 250, 438)
+cropped_image = img.crop(region)
+display(cropped_image)
+
+paste_positon = (250, 0)
+img.paste(cropped_image, paste_positon)
+display(img)
