@@ -1,0 +1,21 @@
+from PIL import Image
+directory = 'D:/ThiGiacMayTinh'
+from PIL import Image
+
+my_path = 'D:/ThiGiacMayTinh/1.jpg'
+img = Image.open(my_path)
+img.show()
+display(img)
+
+rotated_image = img.rotate(90)
+display(rotated_image)
+
+rotated_image = rotated_image.rotate(90)
+display(rotated_image)
+
+transposed_image = img.transpose(Image.Transpose.ROTATE_90)
+display(transposed_image)
+
+transposed_image = transposed_image.transpose(Image.Transpose.ROTATE_90)
+display(transposed_image)
+
