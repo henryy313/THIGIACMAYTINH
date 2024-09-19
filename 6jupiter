@@ -1,0 +1,7 @@
+!pip install Pillow
+from PIL import Image
+my_path = 'D:/ThiGiacMayTinh/1.jpg'
+img = Image.open(my_path)
+display(img)
+gray_image = img.convert("L")
+display(gray_image)
